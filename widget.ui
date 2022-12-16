@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>502</width>
+    <width>313</width>
     <height>361</height>
    </rect>
   </property>
@@ -44,7 +44,7 @@
   <widget class="QLabel" name="countLabel">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>20</x>
      <y>300</y>
      <width>81</width>
      <height>16</height>
@@ -54,22 +54,12 @@
     <string>Вычислить:</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="countEdit">
-   <property name="geometry">
-    <rect>
-     <x>390</x>
-     <y>320</y>
-     <width>101</width>
-     <height>22</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QPushButton" name="maxButton">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>20</x>
      <y>320</y>
-     <width>93</width>
+     <width>71</width>
      <height>28</height>
     </rect>
    </property>
@@ -80,9 +70,9 @@
   <widget class="QPushButton" name="minButton">
    <property name="geometry">
     <rect>
-     <x>140</x>
+     <x>100</x>
      <y>320</y>
-     <width>93</width>
+     <width>71</width>
      <height>28</height>
     </rect>
    </property>
@@ -93,9 +83,9 @@
   <widget class="QPushButton" name="srzButton">
    <property name="geometry">
     <rect>
-     <x>250</x>
+     <x>180</x>
      <y>320</y>
-     <width>121</width>
+     <width>111</width>
      <height>28</height>
     </rect>
    </property>
@@ -119,21 +109,21 @@
   <widget class="QLabel" name="sortLabel">
    <property name="geometry">
     <rect>
-     <x>390</x>
-     <y>20</y>
+     <x>160</x>
+     <y>90</y>
      <width>81</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>Сортировка:</string>
+    <string>Сортировки:</string>
    </property>
   </widget>
   <widget class="QPushButton" name="fastSortButton">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>50</y>
+     <x>160</x>
+     <y>120</y>
      <width>93</width>
      <height>28</height>
     </rect>
@@ -145,8 +135,8 @@
   <widget class="QPushButton" name="hairbrushSortButton">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>80</y>
+     <x>160</x>
+     <y>150</y>
      <width>93</width>
      <height>28</height>
     </rect>
@@ -158,8 +148,8 @@
   <widget class="QPushButton" name="bubbleSortButton">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>110</y>
+     <x>160</x>
+     <y>180</y>
      <width>93</width>
      <height>28</height>
     </rect>
@@ -171,8 +161,8 @@
   <widget class="QPushButton" name="monkeSortButton">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>140</y>
+     <x>160</x>
+     <y>210</y>
      <width>93</width>
      <height>28</height>
     </rect>
@@ -184,14 +174,27 @@
   <widget class="QPushButton" name="gnomeSortButton">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>170</y>
+     <x>160</x>
+     <y>240</y>
      <width>93</width>
      <height>28</height>
     </rect>
    </property>
    <property name="text">
     <string>Гномья</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="num_label">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>320</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
  </widget>

@@ -41,6 +41,9 @@ bool Widget::fillArrayFromTable(int *array, int size){ // Функция зап�
             if (ok){
                 array[r] = d;
             }
+            else{
+                QMessageBox::information(this, "Ошибка", "Ошибка данных");
+            }
         }
         else {
             cell = new QTableWidgetItem;
@@ -200,10 +203,7 @@ void Widget::quickSort(int* array, int size) // Быстрая сортиров�
 
 
 
-//----------------------------------------------ВЗАИМОДЕЙСТВИЕ С ВИДЖЕТОМ-----------------------------------------------
 
-
-//                                    БЛОК ВЫЗОВА СОРТИРОВОК
 
 void Widget::on_fastSortButton_clicked() // При нажатии на соответствующую кнопку вызывает функцию быстрой сортировки
 {
@@ -297,7 +297,8 @@ void Widget::on_maxButton_clicked() // При нажатии на кнопку m
     if (fillArrayFromTable(globalArray, n))
         bubbleSort(globalArray, n);
 
-    ui->countEdit->setText(QString::number(globalArray[n - 1]));
+//    ui->countEdit->setText(QString::number(globalArray[n - 1]));
+    ui->num_label->setText(QString::number(globalArray[n - 1]));
 }
 
 void Widget::on_minButton_clicked() // При нажатии на кнопку min выводит наименьшее значение из ячееек таблицы
@@ -307,7 +308,8 @@ void Widget::on_minButton_clicked() // При нажатии на кнопку m
     if (fillArrayFromTable(globalArray, n))
         bubbleSort(globalArray, n);
 
-    ui->countEdit->setText(QString::number(globalArray[0]));
+//    ui->countEdit->setText(QString::number(globalArray[0]));
+    ui->num_label->setText(QString::number(globalArray[0]));
 }
 
 void Widget::on_srzButton_clicked() // При нажатии на кнопку ср.знач выводит среднее значение из ячееек таблицы
@@ -321,7 +323,8 @@ void Widget::on_srzButton_clicked() // При нажатии на кнопку �
     for (int j = 0; j < n; j++){
         srz += globalArray[j];
     }
-    ui->countEdit->setText(QString::number(srz / n));
+//    ui->countEdit->setText(QString::number(srz / n));
+    ui->num_label->setText(QString::number(srz / n));
 }
 
 
@@ -337,5 +340,11 @@ void Widget::on_randomButton_clicked()
 
 void Widget::on_countEdit_textChanged(const QString &arg1)
 {
-    ui->countEdit->clear();
+//    ui->countEdit->clear();
+    ui->num_label->clear();
+}
+
+void Widget::on_tableWidget_itemChanged(QTableWidgetItem *item)
+{
+    ui->num_label->clear();
 }

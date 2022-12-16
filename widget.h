@@ -2,6 +2,7 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include <QTableWidgetItem>
 
 
 namespace Ui {
@@ -56,6 +57,8 @@ private slots:
     void on_spinBox_valueChanged(int arg1);
 
     void on_countEdit_textChanged(const QString &arg1);
+
+    void on_tableWidget_itemChanged(QTableWidgetItem *item);
 
 private:
     Ui::Widget *ui;
